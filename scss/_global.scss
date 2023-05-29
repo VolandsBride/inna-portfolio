@@ -19,3 +19,9 @@
     text-decoration: none;
   }
 }
+
+.title {
+  @extend %bayon-400;
+  font-size: 100px;
+  text-align: right;
+}

@@ -1,7 +1,7 @@
 @import 'reset';
-@import 'global';
 @import 'fonts';
 @import 'vars';
+@import 'global';
 
 
 body {
@@ -72,3 +72,59 @@ body {
     border-radius: 30px;
   }
 }
+
+.about {
+  color: $white;
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $white;
+    padding-bottom: 160px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    @extend %cabin-400;
+    opacity: 90%;
+    font-size: 38px;
+    letter-spacing: 1px;
+    line-height: 60px;
+    max-width: 935px;
+    width: 100%;
+  }
+  &__text-hello {
+    padding-bottom: 50px;
+    font-size: 60px;
+  }
+  &__text-paragraph {
+    padding-bottom: 40px;
+  }
+  &__text-paragraph a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease-in;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &__icons {
+    right: -10px;
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+  }
+  &__icon {
+    margin: 15px;
+  }
+  &__icons-left,
+  &__icons-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
