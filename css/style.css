@@ -1,0 +1,296 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list-item {
+  margin-left: 40px;
+}
+.menu__list-link {
+  text-decoration: none;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Bayon";
+  src: url("/fonts/Bayon-Regular.otf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Bellefair";
+  src: url("/fonts/Bellefair-Regular.otf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Bigilla";
+  src: url("/fonts/Bigilla.otf");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Bigilla";
+  src: url("/fonts/Bigilla-Bold.otf");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Cabin";
+  src: url("/fonts/Cabin-Regular.otf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Cabin";
+  src: url("/fonts/Cabin-Medium.otf");
+}
+.header__top {
+  font-family: "Bellefair", sans-serif;
+  font-weight: 400;
+}
+
+.header__text {
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #1C1C1C;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+.header__top-inner {
+  display: flex;
+  padding: 25px 0;
+  border-bottom: 1px solid #C8C6C3;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.header__logo {
+  color: #C8C6C3;
+  text-decoration: none;
+}
+.header .menu__list-link {
+  color: #C8C6C3;
+  transition: all 0.3s ease-in;
+}
+.header .menu__list-link:hover {
+  color: #84FFBC;
+}
+.header__content {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #C8C6C3;
+}
+.header__top-phrase {
+  margin-bottom: 40px;
+}
+.header__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__top-phrase {
+  width: 100%;
+}
+.header__desc {
+  width: 49%;
+  background-color: #C8C6C3;
+  height: 612px;
+  border-radius: 30px;
+  color: #1C1C1C;
+}
+.header__text {
+  font-size: 32px;
+  max-width: 560px;
+  width: 100%;
+  line-height: 37px;
+  padding: 40px 0 0 40px;
+}
+.header__img {
+  width: 49%;
+  height: 612px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

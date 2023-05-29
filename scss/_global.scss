@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    margin-left: 40px;
+  }
+  &__list-link {
+    text-decoration: none;
+  }
+}
