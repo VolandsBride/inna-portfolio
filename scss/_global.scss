@@ -2,7 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  cursor: none !important;
+  cursor: none;
 }
 
 .container {
@@ -18,12 +18,38 @@
   }
   &__list-link {
     text-decoration: none;
+    color: $white;
+    transition: all .3s ease-in;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .link-active {
+    color: $accent;
   }
 }
+
 
 .title {
   @extend %bayon-400;
   font-size: 100px;
   text-align: right;
+  color: $white;
 }
 
+.title-type {
+  @extend %bellefair-400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  opacity: 50%;
+  &:hover {
+      animation: shake 0.5s;
+    }
+}
+
+.title-name {
+  @extend %bigilla-600;
+  font-size: 120px;
+  color: #fff;
+}

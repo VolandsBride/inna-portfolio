@@ -33,11 +33,11 @@
 
 .glitch__layer:nth-child(1) {
   transform: translateX(-5%);
-  animation: glitch-anim-1 2s infinite linear alternate;
+  animation: glitch-anim-1 3s infinite linear alternate;
 }
 
 .glitch__layer:nth-child(2) {
-  transform: translateX(3%) translateY(3%);
+  transform: translateX(10%) translateY(3%);
   animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
 }
 
