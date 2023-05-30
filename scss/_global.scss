@@ -5,6 +5,10 @@
   cursor: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: 0 50px;
 }
@@ -43,13 +47,65 @@
   text-transform: uppercase;
   font-size: 50px;
   opacity: 50%;
+  text-align: right;
   &:hover {
       animation: shake 0.5s;
     }
+}
+
+.works__type--left {
+  text-align: left;
 }
 
 .title-name {
   @extend %bigilla-600;
   font-size: 120px;
   color: #fff;
+  text-decoration: none;
 }
+
+
+// colorful social media icons
+
+// .footer {
+//   .footer__link--github {
+//     path {
+//       transition: fill .3s ease-in-out;
+//     }
+//     &:hover {
+//       path {
+//         fill: #7146C6;
+//       }
+//     }
+//   }
+//   .footer__link--dribbble {
+//     path {
+//       transition: fill .3s ease-in-out;
+//     }
+//     &:hover {
+//       path {
+//         fill: #E74D89;
+//       }
+//     }
+//   }
+//   .footer__link--facebook {
+//     path {
+//       transition: fill .3s ease-in-out;
+//     }
+//     &:hover {
+//       path {
+//         fill: #1176F9;
+//       }
+//     }
+//   }
+//   .footer__link--linkedin {
+//     path {
+//       transition: fill .3s ease-in-out;
+//     }
+//     &:hover {
+//       path {
+//         fill: #0A66C2;
+//       }
+//     }
+//   }
+// }
