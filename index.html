@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Start html</title>
+  <title>Inna's portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/flaticon.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__top">
@@ -20,6 +20,11 @@
           </a>
           <nav class="menu">
             <ul class="menu__list">
+              <li class="menu__list-item">
+                <a  class="menu__list-link link-active "href="#">
+                  download cv
+                </a>
+              </li>
               <li class="menu__list-item">
                 <a  class="menu__list-link"href="#">
                   about
@@ -38,14 +43,22 @@
         </div>
       </div>
       <div class="header__content">
-        <img class="header__top-phrase" src="/images/top-phrase.svg" alt="phrase" >
+        <div class="header__top-phrase">
+          <img class="header__top-image" src="/images/top-phrase.svg" alt="phrase">
+	      </div>
         <div class="header__hero">
           <div class="header__desc">
             <p class="header__text">
               Crafting intuitive and visually appealing interfaces that enhance user experience through research, wireframes, prototypes, and high-fidelity designs. Translating designs into clean, responsive code using HTML, CSS, and a little JavaScript, with expertise in Webflow, to create seamless and optimized web experiences.
             </p>
           </div>
-          <img class="header__img" src="/images/hero-image.png" alt="inna">
+          <div class="header__profile glitch">
+              <img class="header__img" src="/images/hero-image.png" alt="inna">
+              <div class="glitch__layers">
+		      <div class="glitch__layer"></div>
+		      <div class="glitch__layer"></div>
+		      <div class="glitch__layer"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -81,6 +94,10 @@
     </div>
   </section>
 
+
+
+ <div class="cursor"></div>
+  <div class="cursor2"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>

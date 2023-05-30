@@ -1,6 +1,8 @@
 @import 'reset';
+@import 'cursor';
 @import 'fonts';
 @import 'vars';
+@import 'animations';
 @import 'global';
 
 
@@ -34,21 +36,22 @@ body {
     &__list-link:hover {
       color: $accent;
     }
+    .link-active {
+      color: $accent;
+    }
   }
   &__content {
     padding-bottom: 60px;
     border-bottom: 1px solid $white;
   }
-  &__top-phrase {
+  &__top-image {
     margin-bottom: 40px;
+    width: 100%;
   }
   &__hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  &__top-phrase {
-    width: 100%;
   }
   &__desc {
     width: 49%;
@@ -65,11 +68,14 @@ body {
     line-height: 37px;
     padding: 40px 0 0 40px;
   }
-  &__img {
+  &__profile {
     width: 49%;
     height: 612px;
     object-fit: cover;
     border-radius: 30px;
+  }
+  &__img {
+    width: 100%;
   }
 }
 
@@ -120,6 +126,10 @@ body {
   }
   &__icon {
     margin: 15px;
+    &:hover {
+        animation: shake 0.5s;
+        ;
+      }
   }
   &__icons-left,
   &__icons-right {
