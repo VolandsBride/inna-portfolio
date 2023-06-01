@@ -127,9 +127,11 @@ body {
 }
 
 .works {
-  border-bottom: 1px solid $white;
   margin-bottom: 120px;
-  padding-bottom: 200px;
+  &__inner {
+    padding-bottom: 200px;
+    border-bottom: 1px solid $white;
+  }
   &__title {
     margin-bottom: 100px;
   }
@@ -137,7 +139,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 220px;
   }
   &__link {
     overflow: hidden;
@@ -202,6 +204,10 @@ body {
     border-bottom: 1px solid rgba(200, 198, 195, 0.5);
     padding-bottom: 20px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+    &:hover {
+      border-bottom: 1px solid $accent;
+    }
   }
   &__links {
     margin-bottom: 300px;
@@ -224,6 +230,18 @@ body {
     color: $white;
     padding: 25px 0;
     border-top: 1px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__top {
+    @extend %bellefair-400;
+    color: $white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $accent;
+    }
   }
 }
 
@@ -281,10 +299,21 @@ body {
     .title-left {
       width: auto;
     }
+    &__img {
+      &:hover {
+        transform: none;
+      }
+    }
   }
 }
 
 @media (max-width: 978px) {
+  .header {
+    &__text {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
   .title {
     font-size: 80px;
   }
@@ -322,4 +351,116 @@ body {
         font-size: 80px;
       }
     }
+    .footer {
+      &__text {
+        font-size: 80px;
+      }
+    }
 }
+
+@media (max-width: 740px) {
+  .burger {
+      display: flex;
+    }
+  .header {
+    &__content {
+      padding-bottom: 0;
+    }
+    &__hero {
+      flex-direction: column;
+    }
+    &__desc {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    &__profile {
+      width: 100%;
+    }
+    &__img {
+      height: auto;
+    }
+    .glitch__layers {
+      height: 50%;
+    }
+    .header {
+      &__top-inner {
+        padding: 20px 0;
+      }
+
+      &__logo {
+        z-index: 100;
+      }
+
+      &__content-inner {
+        padding: 80px 30px;
+      }
+    }
+
+    .menu {
+      transition: all .3s;
+
+      &__list {
+        z-index: 10;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding-top: 140px;
+        background: $black;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+        animation: burgerAnimation .3s
+      }
+
+      &__list-item {
+        padding: 40px 0;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      &__list-link {
+        display: block;
+        font-size: 36px;
+        letter-spacing: 5px;
+        width: 100%;
+      }
+    }
+  }
+  }
+  .about {
+    margin-bottom: 60px;
+  }
+  .works {
+    margin-bottom: 60px;
+    &__inner {
+      padding-bottom: 100px;
+    }
+    &__item {
+      margin-bottom: 160px;
+    }
+    &__name {
+      bottom: 20px;
+      font-size: 64px;
+    }
+    &__more {
+      font-size: 32px;
+    }
+  }
+  .footer {
+    margin-bottom: 160px;
+    &__link {
+      margin-right: 20px;
+    }
+    &__link svg{
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+
+

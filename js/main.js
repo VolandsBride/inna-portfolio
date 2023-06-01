@@ -1,3 +1,13 @@
+document.querySelector('.burger').addEventListener('click', function () {
+  this.classList.toggle('active');
+  document.querySelector('.menu__list').classList.toggle('open');
+}); 
+
+$( '.menu__list' ).on("click", function(){
+  $('.menu__list').removeClass('open');
+});
+
+
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
