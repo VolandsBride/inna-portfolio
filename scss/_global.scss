@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .container {
@@ -42,10 +43,11 @@ html {
 }
 
 .title-type {
+  padding-top: 10px;
   @extend %bellefair-400;
   color: #fff;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 40px;
   opacity: 50%;
   text-align: right;
   &:hover {
