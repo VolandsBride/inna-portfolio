@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   &__top {
     @extend %bellefair-400;
   }
@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   &__logo {
     color: $white;
@@ -33,7 +33,7 @@ body {
     border-bottom: 1px solid $white;
   }
   &__top-image {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
   }
   &__hero {
