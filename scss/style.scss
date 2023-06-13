@@ -359,8 +359,16 @@ body {
 }
 
 @media (max-width: 740px) {
-  body .cursor .cursor2 {
-    display: 'none'
+  body {
+    .cursor {
+      display: none;
+    }
+    .cursor2 {
+      display: none;
+    }
+  }
+  .container {
+    padding: 0 16px;
   }
   .burger {
       display: flex;
@@ -384,7 +392,7 @@ body {
       animation: burgerAnimation .3s
     }
     &__list-item {
-      padding: 40px 0;
+      padding: 40px 10px;
       width: 100%;
       margin-left: 0;
     }
@@ -513,6 +521,7 @@ body {
   .about {
     &__text-paragraph {
       font-size: 26px;
+      line-height: 38px;
     }
     &__icons {
       right: 0;
@@ -539,3 +548,4 @@ body {
     }
   }
 }
+
